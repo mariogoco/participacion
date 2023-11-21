@@ -1,5 +1,5 @@
 <?php
-include '../config/connect.php';
+include ($dirBase . '/app/config/db.php');
 
 class Usuario extends Conexion
 {
@@ -34,7 +34,7 @@ class Usuario extends Conexion
         $stmt->execute();
         foreach ($stmt as $currentUser) {
             $this->nombres = $currentUser['nombres'];
-            $this->username = $currentUser['num_documento'];
+            $this->username = $currentUser['documento'];
         }
     }
 

@@ -1,0 +1,250 @@
+/* Estilo con animación para botones */
+.button-fluid {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #e8e8e8;
+    padding: 0.7em 1.7em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.5em;
+    background: #084718;
+    border: 1px solid #e8e8e8;
+    box-shadow: 5px 5px 10px #b3b3b3,
+        -5px -5px 10px #ffffff;
+}
+
+.button-fluid:active {
+    color: #084718;
+    box-shadow: inset 4px 4px 10px #c5c5c5,
+        inset -4px -4px 10px #ffffff;
+}
+
+.button-fluid:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button-fluid:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button-fluid:hover {
+    color: #084718;
+    border: 1px solid #e8e8e8;
+    box-shadow: 5px 5px 10px #375B1B,
+        -5px -5px 10px #ffffff;
+}
+
+.button-fluid:hover:before {
+    top: -35%;
+    background-color: #e8e8e8;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button-fluid:hover:after {
+    top: -45%;
+    background-color: #e8e8e8;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button-fluid:disabled,
+fieldset:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.button-fluid:disabled:before {
+    top: -35%;
+    background-color: #e8e8e8;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button-fluid:disabled:after {
+    top: -45%;
+    background-color: #e8e8e8;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* Botón de confirmación ventana emergente de mensajes */
+.swal2-confirm {
+    background-color: #103712 !important;
+}
+
+/* Colores principales de la plantilla */
+.btn-primary,
+.btn.bg-gradient-primary {
+    box-shadow: 0 3px 3px 0 rgba(1, 61, 11, 0.15), 0 3px 1px -2px rgba(2, 75, 27, 0.2), 0 1px 5px 0 rgba(4, 148, 28, 0.15) !important;
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(195deg, #155323 0%, #035510 100%);
+}
+
+.input-group.input-group-dynamic .form-control,
+.input-group.input-group-dynamic .form-control:focus,
+.input-group.input-group-static .form-control,
+.input-group.input-group-static .form-control:focus {
+    background-image: linear-gradient(0deg, #0b470d 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #d2d2d2 1px, rgba(209, 209, 209, 0) 0);
+    border-radius: 0 !important;
+}
+
+.input-group.input-group-dynamic.is-focused label,
+.input-group.input-group-static.is-focused label {
+    color: #103712 !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #103712;
+    --bs-btn-border-color: #103712;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #103712;
+    --bs-btn-hover-border-color: #103712;
+    --bs-btn-focus-shadow-rgb: 233, 30, 99;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #103712;
+    --bs-btn-active-border-color: #103712;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #103712;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #103712;
+    --bs-gradient: none;
+}
+
+.btn-outline-primary:hover {
+    --bs-btn-color: #137e18;
+    --bs-btn-border-color: #137e18;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #137e18;
+    --bs-btn-hover-border-color: #137e18;
+    --bs-btn-focus-shadow-rgb: 233, 30, 99;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #137e18;
+    --bs-btn-active-border-color: #137e18;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #137e18;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #137e18;
+    --bs-gradient: none;
+    color: #137e18;
+}
+
+.btn:hover {
+    color: #137e18;
+}
+
+.shadow-primary {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(1, 48, 21, 0.4) !important;
+}
+
+:root {
+    --bs-primary: #174F1A;
+    --bs-link-color: #174F1A;
+    --bs-link-hover-color: #174F1A;
+    --bs-code-color: #0b5226;
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {
+    background: #174F1A;
+    ;
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked,
+.form-check:not(.form-switch) .form-check-input[type="radio"]:checked {
+    border-color: #174F1A;
+    ;
+}
+
+/* Campo de selección de archivos adjuntos */
+input[type="file"] {
+    font-size: 14px;
+    border-spacing: 5px;
+}
+
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    padding: 80px 0px 60px 30%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+
+.files input:focus {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+
+}
+
+.files {
+    position: relative
+}
+
+.files:after {
+    pointer-events: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 35px;
+    right: 0;
+    height: 35px;
+    content: "";
+    background-image: url(../img/download-icon.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 37px;
+    content: "...o arrastra el archivo aquí.";
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Apariencia campo de selección con capacidad de búsqueda */
+.ts-control {
+    border: 0px !important;
+    padding: 3px 0px !important;
+    color: #092f55 !important;
+}
+
+.ts-dropdown,
+.ts-control,
+.ts-control input {
+    font-size: 0.875rem !important;
+}

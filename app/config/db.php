@@ -11,9 +11,9 @@ class Conexion
     public function __construct()
     {
         $this->host = 'localhost';
-        $this->dbname = 'dosquebr_caracterizacion';
-        $this->user = 'dosquebr_webmaster';
-        $this->pwd = "60FIK6nSuP_M";
+        $this->dbname = 'participacion';
+        $this->user = 'root';
+        $this->pwd = "";
         $this->charset = 'utf8mb4';
     }
 
