@@ -13,7 +13,7 @@ class Conexion
         $this->host = 'localhost';
         $this->dbname = 'participacion';
         $this->user = 'root';
-        $this->pwd = "";
+        $this->pwd = '';
         $this->charset = 'utf8mb4';
     }
 
@@ -26,7 +26,7 @@ class Conexion
             return $dhb;
         } catch (Exception $e) {
             $dhb = 'Error de conexión.';
-            echo "Error: " . $e->getMessage();
+            echo 'Error: ' . $e->getMessage();
         }
     }
 }

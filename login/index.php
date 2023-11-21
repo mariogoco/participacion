@@ -46,7 +46,7 @@
 </head>
 
 <body class="bg-gray-100">
-    <div class="container position-sticky z-index-sticky top-0">        
+    <div class="container position-sticky z-index-sticky top-0">
         <div class="row">
             <div class="col-12">
                 <!-- Navbar -->
@@ -96,10 +96,10 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form action="../app/controller/login/ingreso.php" method="POST" onsubmit="enviar.disabled = true; return true;" id="login">
+                                <form action="<?= $appURL ?>/index.php" method="POST" onsubmit="enviar.disabled = true; return true;" id="login">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="ps-3 form-control" style="border: 1px solid #d2d6da;" id="user" name="user" placeholder="Escribe tu usuario" pattern="[a-z 0-9]{5,15}" autocomplete="on" required \>
-                                        <label for="user" class="ms-3">Usuario</label>
+                                        <input type="text" class="ps-3 form-control" style="border: 1px solid #d2d6da;" id="username" name="username" placeholder="Escribe tu usuario" pattern="[a-z 0-9]{5,15}" autocomplete="on" required \>
+                                        <label for="username" class="ms-3">Usuario</label>
                                     </div>
                                     <div class="form-floating">
                                         <input type="password" class="ps-3 form-control" style="border: 1px solid #d2d6da;" id="password" name="password" maxlength="20" placeholder="Escribe tu contraseña" required \>
@@ -116,6 +116,7 @@
                         </div>
                     </div>
                 </div>
+                <?php include($dirBase . '/controller/popup/respuesta.php'); ?>
             </div>
             <footer class="footer position-absolute bottom-2 py-2 w-100">
                 <div class="container">
